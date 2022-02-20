@@ -1,5 +1,5 @@
 # pytest_task_parametrisation_configs_plugins
-
+<p>В данном репозитории присутствует в том числе реализация ООП - сделал базовый класс для всех проверок BasePage, а от него наследовал все остальные Page Object: LoginPage, MainPage.</p>
 <ol>
 <li>Тест в репозитории можно запустить командой&nbsp;<code>pytest --language=es</code>, тест успешно проходит.</li>
 <li>Проверка работоспособности кода для разных языков. Добавьте в файл с тестом команду<strong>&nbsp;time.sleep(30)</strong>&nbsp;сразу после открытия ссылки. Запустите тест с параметром&nbsp;<strong>--language=fr&nbsp;</strong>и визуально проверьте, что фраза на кнопке добавления в корзину выглядит так:&nbsp;<strong>"Ajouter au panier"</strong>.</li>
