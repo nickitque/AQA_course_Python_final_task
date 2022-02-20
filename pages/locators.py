@@ -11,5 +11,5 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_TO_CART = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
-    ALERT_INNER_CART = (By.XPATH, "/html/body/div[2]/div/div[1]/div[1]/div")
+    SUCCESS_MESSAGE = (By.XPATH, "/html/body/div[2]/div/div[1]/div[1]/div")
     ALERT_INNER_DISCOUNT = (By.XPATH, "/html/body/div[2]/div/div[1]/div[2]/div")
