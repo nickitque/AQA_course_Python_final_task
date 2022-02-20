@@ -1,9 +1,2 @@
-# pytest_task_parametrisation_configs_plugins
-<p>В данном репозитории присутствует в том числе реализация ООП - сделал базовый класс для всех проверок BasePage, а от него наследовал все остальные Page Object: LoginPage, MainPage.</p>
-<ol>
-<li>Тест в репозитории можно запустить командой&nbsp;<code>pytest --language=es</code>, тест успешно проходит.</li>
-<li>Проверка работоспособности кода для разных языков. Добавьте в файл с тестом команду<strong>&nbsp;time.sleep(30)</strong>&nbsp;сразу после открытия ссылки. Запустите тест с параметром&nbsp;<strong>--language=fr&nbsp;</strong>и визуально проверьте, что фраза на кнопке добавления в корзину выглядит так:&nbsp;<strong>"Ajouter au panier"</strong>.</li>
-<li>Браузер должен объявляться в фикстуре&nbsp;<strong>browser</strong>&nbsp;и передаваться в тест как параметр.</li>
-<li>В тесте проверяется наличие кнопки добавления в корзину. Селектор кнопки является уникальным для проверяемой страницы.&nbsp;<u>Есть&nbsp;<strong>assert</strong>.</u></li>
-<li>Название тестового метода внутри файла test_items.py соответствует задаче. Название test_something не удовлетворяет требованиям.</li>
-</ol>
+# pytest_final_task
+<p>Final task for stepic course using Python, OOP, Selenium and Pytest. </p>
