@@ -23,6 +23,14 @@ class BasePage():
         link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         link.click()
 
+    def go_to_cart(self):
+        link = self.browser.find_element(*BasePageLocators.CART_LINK)
+        link.click()
+
+    def check_message_in_cart(self):
+        empty_cart_message = (self.browser.find_element(*BasePageLocators.CART_MESSAGE_EMPTY)).text
+        assert "Ваша корзина пуста" in empty_cart_message
+
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
 
