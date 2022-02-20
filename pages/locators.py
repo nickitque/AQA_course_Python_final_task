@@ -13,6 +13,14 @@ class LoginPageLocators():
     LOGIN_FORM = (By.ID, "login_form")
     REGISTRATION_FORM = (By.ID, "register_form")
 
+    """Слекторы полей формы регистрации"""
+    LOGIN_REGISTRATION = (By.CSS_SELECTOR, "#id_registration-email")
+    PASSWORD_REGISTRATION = (By.CSS_SELECTOR, "#id_registration-password1")
+    CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
+
+    REGISTRATION_BUTTON = (By.CSS_SELECTOR, "[name='registration_submit']")
+    LOGIN_IMAGE = (By.CSS_SELECTOR, ".icon-user")
+
 class ProductPageLocators():
     ADD_TO_CART = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
     SUCCESS_MESSAGE = (By.XPATH, "/html/body/div[2]/div/div[1]/div[1]/div")
