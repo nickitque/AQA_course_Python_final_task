@@ -7,7 +7,6 @@ class LoginPage(BasePage):
         self.should_be_login_url()
         self.should_be_login_form()
         self.should_be_register_form()
-        self.register_new_user()
 
 
     def should_be_login_url(self):

@@ -13,7 +13,6 @@ class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
-        self.browser.implicitly_wait(timeout)
 
     """Метод Open должен открывать нужную страницу в браузере, используя метод get()."""
     def open(self):
@@ -32,7 +31,7 @@ class BasePage():
 
     def check_message_in_cart(self):
         empty_cart_message = (self.browser.find_element(*BasePageLocators.CART_MESSAGE_EMPTY)).text
-        assert "Ваша корзина пуста" in empty_cart_message
+        assert "Your basket is empty" in empty_cart_message
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"

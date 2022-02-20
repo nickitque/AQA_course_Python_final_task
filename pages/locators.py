@@ -6,6 +6,7 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     CART_LINK = (By.XPATH, "/html/body/header/div[1]/div/div[2]/span/a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    CART_MESSAGE_EMPTY = (By.XPATH, "/html/body/div[2]/div/div[3]/div[2]/p")
 
 class MainPageLocators():
     LOGIN_LINK = (By.ID, "login_link")
