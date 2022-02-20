@@ -1,9 +1,9 @@
-import time
 import pytest
 
 from pages.main_page import MainPage
 
 link = "http://selenium1py.pythonanywhere.com"
+
 
 @pytest.mark.xfail
 def test_guest_can_go_to_login_page(browser):

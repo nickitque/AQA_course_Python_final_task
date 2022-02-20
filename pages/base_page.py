@@ -10,11 +10,13 @@ import math
 
 class BasePage():
     """В конструктор в качестве параметров мы передаем экземпляр драйвера и url адрес."""
+
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
 
     """Метод Open должен открывать нужную страницу в браузере, используя метод get()."""
+
     def open(self):
         self.browser.get(self.url)
 
@@ -25,6 +27,7 @@ class BasePage():
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
                                                                      " probably unauthorised user"
+
     def go_to_cart(self):
         link = self.browser.find_element(*BasePageLocators.CART_LINK)
         link.click()

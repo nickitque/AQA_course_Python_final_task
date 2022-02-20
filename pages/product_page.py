@@ -23,4 +23,3 @@ class ProductPage(BasePage):
 
     def is_element_dissapeared(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE)
-
