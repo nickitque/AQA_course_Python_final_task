@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 def pytest_addoption(parser):
     """Work with terminal for choosing language. The defaul lang is fr."""
-    parser.addoption("--language", action="store", default="fr",
+    parser.addoption("--language", action="store", default="ru",
                      help="Choose language: ru or es or other")
 
 
