@@ -26,6 +26,7 @@ class ProductPageLocators():
     ADD_TO_CART = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
     SUCCESS_MESSAGE = (By.XPATH, "/html/body/div[2]/div/div[1]/div[1]/div")
     ALERT_INNER_DISCOUNT = (By.XPATH, "/html/body/div[2]/div/div[1]/div[2]/div")
+    SUCCESS_MASSAGE_LINK = (By.CSS_SELECTOR, ".alert-success")
 
 class BasketPageLocators():
     CART_MESSAGE_EMPTY = (By.XPATH, "/html/body/div[2]/div/div[3]/div[2]/p")
