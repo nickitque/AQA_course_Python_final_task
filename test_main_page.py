@@ -1,5 +1,5 @@
-#from pages.main_page import MainPage
 from pages.main_page import MainPage
+
 
 link = "http://selenium1py.pythonanywhere.com"
 #http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=midsummer
