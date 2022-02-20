@@ -15,4 +15,4 @@ class ProductPage(BasePage):
         alert_message_success = (self.browser.find_element(*ProductPageLocators.ALERT_INNER_CART)).text
         alert_message_discount = (self.browser.find_element(*ProductPageLocators.ALERT_INNER_DISCOUNT)).text
         assert "был добавлен в вашу корзину" in alert_message_success
-        assert "Deferred benefit offer" in alert_message_discount
+        assert "Ваша корзина удовлетворяет условиям предложения" in alert_message_discount
